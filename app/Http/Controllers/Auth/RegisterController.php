@@ -4,10 +4,11 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\User;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
+use Illuminate\Http\Request;
+use Illuminate\Http\session;
 use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
@@ -65,6 +66,8 @@ class RegisterController extends Controller
             'occupation' => $request['profissao']
         ]);
 
+        $request->session()->flash('key', $user);
+
         $response = $this->broker()->sendResetLink(
             $request->only('email')
         );
@@ -73,14 +76,7 @@ class RegisterController extends Controller
             ? $this->sendResetLinkResponse($response)
             : $this->sendResetLinkFailedResponse($request, $response);
 
-        return redirect('/admin/home');
-
-
-
-
-
-
-
+        return redirect('/admin/registar/personalinformation');
         
     }
 }

@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <title>Personal Nutritionist - Diana Ferreira</title>
     <!-- Bootstrap core CSS-->
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css')}}" rel  ="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="{{ asset('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <!-- Page level plugin CSS-->
