@@ -22,7 +22,7 @@ class CreateAnthropometricEvaluationTable extends Migration
             $table->decimal('fat_mass', 6, 2)->nullable();
             $table->decimal('waist_perimeter', 6, 2)->nullable();
             $table->decimal('hip_permieter', 6, 2)->nullable();
-            $table->text('physical_activity')->nullable();
+            $table->decimal('physical_activity')->nullable();
             $table->text('objectivity')->nullable();
             $table->text('recomendations')->nullable();
             $table->decimal('imc', 6, 2)->nullable();

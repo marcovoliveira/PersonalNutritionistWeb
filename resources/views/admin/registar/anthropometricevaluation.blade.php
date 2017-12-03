@@ -26,184 +26,121 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
-      		            <form class="form-group" role="form" method="POST" action="/admin/registar/personalinformation">
+      		            <form class="form" role="form" method="POST" 
+                      action="/admin/registar/anthropometricevaluation">
                          {{ csrf_field() }}
-
-                        <!-- Horario de semana -->
+                         <div class="row">
+                     
+                        <!-- Altura -->
                         <div class="form-group">
-                          <label class="" for="horariosemana">Horario de semana</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="horariosemana" placeholder="Horario de semana"  value="{{ old('horariosemana') }}" autofocus>
+                          <label class="" for="altura">Altura</label>
+                          <input style="width:270px" type="number" step="0.01" class="form-control mb-2 mr-sm-2 mb-sm-3" 
+                          name="altura" placeholder="Altura em centimetros"  value="{{ old('altura') }}" autofocus>
+                        </div>
+                       
+                           <!-- Peso -->
+
+                         <div class="form-group">
+                          <label class="" for="peso">Peso</label>
+                          <input style="width:270px" type="number" step="0.01" class="form-control mb-2 mr-sm-2 mb-sm-3" 
+                          name="peso" placeholder="Peso em kilogramas"  value="{{ old('peso') }}">
+                        </div>
+                      
+                          <!-- Gordura Visceral -->
+
+                         <div class="form-group">
+                          <label class="" for="gorduravisceral">Gordura Visceral</label>
+                          <input style="width:270px" type="number" step="0.01" class="form-control mb-2 mr-sm-2 mb-sm-3" 
+                          name="gorduravisceral" placeholder="Gordura Visceral (%)"  value="{{ old('gorduravisceral') }}">
                         </div>
 
-                           <!-- Horario fim de semana -->
+                        <!-- Massa Gorda -->
 
-                        <div class="form-group">
-                          <label class="" for="horariofimsemana">Horario fim de semana</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="horariofimsemana" placeholder="Horario fim de semana"  value="{{ old('horariofimsemana') }}">
-                        </div>
-                             
-                         <!-- Situacao Clinica -->
-
-                        <div class="form-group">
-                          <label class="" for="situacaoclinica">Situação clinica</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="situacaoclinica" placeholder="Situação clinica"  value="{{ old('horariofimsemana') }}">
+                         <div class="form-group">
+                          <label class="" for="massagorda">Massa Gorda</label>
+                          <input style="width:270px" type="number" step="0.01" class="form-control mb-2 mr-sm-2 mb-sm-3" 
+                          name="massagorda" placeholder="Massa Gorda (%)"  value="{{ old('massagorda') }}">
                         </div>
 
-                          <!-- Analises Clinica -->
+                          <!-- Perimetro Cintura -->
 
-                        <div class="form-group">
-                          <label class="" for="analisesclinicas">Analises clinicas</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="analisesclinicas" placeholder="Analises clinicas"  value="{{ old('analisesclinicas') }}">
+                         <div class="form-group">
+                          <label class="" for="perimetrocintura">Perimetro Cintura</label>
+                          <input style="width:270px" type="number" step="0.01" class="form-control mb-2 mr-sm-2 mb-sm-3" 
+                          name="perimetrocintura" placeholder="Perimetro Cintura em centimetros"  value="{{ old('perimetrocintura') }}">
                         </div>
 
-                            <!-- Transito Intestinal -->
+                            <!-- Perimetro Anca -->
 
-                        <div class="form-group">
-                          <label class="" for="transitointestinal">Transito intestinal</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="transitointestinal" placeholder="Transito intestinal"  value="{{ old('transitointestinal') }}">
+                         <div class="form-group">
+                          <label class="" for="perimetroanca">Perimetro Anca</label>
+                          <input style="width:270px" type="number"  step="0.01" class="form-control mb-2 mr-sm-2 mb-sm-3" 
+                          name="perimetroanca" placeholder="Perimetro Anca em centimetros"  value="{{ old('perimetroanca') }}">
                         </div>
 
-                          <!-- Queixas Digestivas -->
+                          <!--Atividade Fisica / Estado Clinico-->      
+                          
 
-                        <div class="form-group">
-                          <label class="" for="quexiasdigestivas">Queixas Digestivas</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="quexiasdigestivas" placeholder="Queixas Digestivas"  value="{{ old('quexiasdigestivas') }}">
-                        </div>
-
-                        <!-- Alergias/Intolerancias Alimentares -->
-
-                        <div class="form-group">
-                          <label class="" for="alergiasintolerancias">
-                          Alergias/Intolerancias Alimentares</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="alergiasintolerancias" placeholder="Alergias/Intolerancias Alimentares"  value="{{ old('alergiasintolerancias') }}">
-                        </div>
-
-                        <!-- Hidratação -->
-
-                        <div class="form-group">
-                          <label class="" for="hidratacao">Hidratação</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="hidratacao" placeholder="Hidratação"  value="{{ old('hidratacao') }}">
-                        </div>
-
-
-                        <!-- Atividade Exercicio/Fisico -->
-
-                        <div class="form-group">
-                          <label class="" for="atividadefisica">Atividade/Exercicio fisico</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="atividadefisica" placeholder="Atividade/Exercicio Fisico"  value="{{ old('atividadefisica') }}">
-                        </div>                  
-
-
-                         <!--Frequencia-->      
+            
                       <div class="form-group">
-                        <label class="" for="genero">Frequencia exercicio fisico</label>
+                        <label class="" for="atividadefisica">Atividade Fisica / Estado Clinico</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-3">
-                          <select class="custom-select mb-2 mr-sm-2 mb-sm-3" name="frequenciaexercicio">
-                              <option value="Raramente" selected>Raramente</option>
-                              <option value="Diariamente">Diariamente</option>
-                              <option value="Semanalmente">Semanalmente</option>
-                              <option value="Mensalmente">Mensalmente</option>
-                              <option value="Nunca">Nunca</option>
+                          <select style="width:270px" class="custom-select mb-2 mr-sm-2 mb-sm-3" name="atividadefisica">
+
+                             @if ($user->genre == 'M')
+
+                              <option value="1.2" selected>Sedentário (1,2)</option>
+                              <option value="1.3">Minima (1,3)</option>
+                              <option value="1.4">Normal (1,4)</option>
+                              <option value="1.5">Alguma (1,5)</option>
+                              <option value="1.6">Intensa (1,6)</option>
+                              <option value="1.8">Muito intensa (1,8)</option>
+                        
+                            @else 
+
+                              <option value="1.2" selected>Sedentário (1,2)</option>
+                              <option value="1.3">Minima (1,3)</option>
+                              <option value="1.35">Normal (1,35)</option>
+                              <option value="1.45">Alguma (1,45)</option>
+                              <option value="1.5">Intensa (1,5)</option>
+                              <option value="1.7">Muito intensa (1,7)</option>
+                          
+                            @endif
+
+                              <option value="1.1">Vent. Acamado (1,1)</option>
+                              <option value="1.2">Acamado (1,2)</option>
+                              <option value="1.3">Ambulatório (1,3)</option>
+                              <option value="1.1">Febre, pós oper. (1,1)</option>
+                              <option value="1.4">Lesão; I. moder. (1,4)</option>
+                              <option value="1.5">Sepsis (1,5)</option>
+                              <option value="2.0">Queimados (2,0)</option>
                           </select>
                           </div>
                       </div>
 
 
-                       <!-- Alimentação Fim de semana -->
-
-                        <div class="form-group">
-                          <label class="" for="alimentacaofimdesemana">Alimentação fim de semana</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="alimentacaofimdesemana" placeholder="Alimentação fim de semana"  value="{{ old('alimentacaofimdesemana') }}">
-                        </div>
-
-                         <!-- Confeções mais utilizadas -->
-
-                        <div class="form-group">
-                          <label class="" for="confecoesutilizadas">Confeções mais utilizadas</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="confecoesutilizadas" placeholder="Confeções mais utilizadas"  value="{{ old('confecoesutilizadas') }}">
-                        </div>       
-
-                         <!-- Consumo de bebidas alcolicas -->
-
-                        <div class="form-group">
-                        <label class="" for="genero">Consumo de bebidas alcolicas</label>
+                      <!--Objetivo-->      
+                      <div class="form-group">
+                        <label class="" for="objetivo">Objetivo</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-3">
-                          <select class="custom-select mb-2 mr-sm-2 mb-sm-3" name="bebidasalcolicas">
-                              <option value="Raramente" selected>Raramente</option>
-                              <option value="Diariamente">Diariamente</option>
-                              <option value="Semanalmente">Semanalmente</option>
-                              <option value="Mensalmente">Mensalmente</option>
-                              <option value="Nunca">Nunca</option>
-                          </select>
-                          </div>
-                      </div>
-
-                      <!-- Frequência do consumo de doces -->
-
-                        <div class="form-group">
-                        <label class="" for="genero">Frequência do consumo de doces</label>
-                          <div class="input-group mb-2 mr-sm-2 mb-sm-3">
-                          <select class="custom-select mb-2 mr-sm-2 mb-sm-3" name="frequenciadoces">
-                              <option value="Raramente" selected>Raramente</option>
-                              <option value="Diariamente">Diariamente</option>
-                              <option value="Semanalmente">Semanalmente</option>
-                              <option value="Mensalmente">Mensalmente</option>
-                              <option value="Nunca">Nunca</option>
-                          </select>
-                          </div>
-                      </div>
-
-                      <!-- Frequência do consumo de salgados/enchidos -->
-
-                        <div class="form-group">
-                        <label class="" for="genero">Frequência do consumo de salgados/enchidos</label>
-                          <div class="input-group mb-2 mr-sm-2 mb-sm-3">
-                          <select class="custom-select mb-2 mr-sm-2 mb-sm-3" name="frequenciasalgados">
-                              <option value="Raramente" selected>Raramente</option>
-                              <option value="Diariamente">Diariamente</option>
-                              <option value="Semanalmente">Semanalmente</option>
-                              <option value="Mensalmente">Mensalmente</option>
-                              <option value="Nunca">Nunca</option>
+                          <select style="width:270px" class="custom-select mb-2 mr-sm-2 mb-sm-3" name="objetivo">
+                              <option value="Perder" selected>Perder Peso</option>
+                              <option value="Manter">Manter Peso</option>
+                              <option value="Ganhar">Ganhar Peso</option>
+                              <option value="Aumentar">Aumentar massa muscular</option>
+                              <option value="Habitos">Habitos Alimentares</option>
                           </select>
                           </div>
                       </div>
 
 
-                      <!-- Alimentos preferidos -->
-
+                         <!-- Alterações a cumprir -->
                         <div class="form-group">
-                          <label class="" for="alimentospreferidos">Alimentos preferidos</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="alimentospreferidos" placeholder="Alimentos preferidos"  value="{{ old('alimentospreferidos') }}">
+                          <label class="" for="alteracoes">Alterações a cumprir</label>
+                          <textarea style="width:550px" class="form-control mb-2 mr-sm-2 mb-sm-3" 
+                          name="alteracoes"></textarea>
                         </div>  
-
-                         <!-- Alimentos preteridos -->
-
-                        <div class="form-group">
-                          <label class="" for="alimentospreteridos">Alimentos preteridos</label>
-                          <input style="width:400px" type="text" class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="alimentospreteridos" placeholder="Alimentos preteridos"  value="{{ old('alimentospreteridos') }}">
-                        </div>  
-
-
-                         <!-- Observações -->
-                        <div class="form-group">
-                          <label class="" for="observacoes">Observações</label>
-                          <textarea class="form-control mb-2 mr-sm-2 mb-sm-3" 
-                          name="observacoes"></textarea>
-                        </div>  
-
+                      </div>
                         <div class="float-right mb-2 mr-sm-2 mb-sm-3"> 
                           <button type="submit" class="btn btn-primary">Registar</button>
                           </div>

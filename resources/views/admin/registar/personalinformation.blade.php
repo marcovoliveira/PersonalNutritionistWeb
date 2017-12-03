@@ -26,7 +26,8 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
-      		            <form class="form-group" role="form" method="POST" action="/admin/registar/personalinformation">
+      		            <form class="form-group" role="form" method="POST" 
+                      action="/admin/registar/personalinformation">
                          {{ csrf_field() }}
 
                         <!-- Horario de semana -->
