@@ -1,6 +1,10 @@
- <!DOCTYPE html>
+
+@inject('users3', 'App\View')
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,10 +23,17 @@
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <a class="navbar-brand" href="{{ url('admin/home') }}">Personal Nutritionist - Diana Ferreira</a>
+
+    <div align="center">
+
+    </div>
+
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -40,27 +51,19 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Planos Alimentares">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="{{ url('admin/foodplans') }}">
                     <i class="fa fa-fw fa-cutlery"></i>
                     <span class="nav-link-text">Planos Alimentares</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Equivalentes">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                <a class="nav-link"  href="{{ url('admin/equivalentes') }}" >
                     <i class="fa fa-fw fa-exchange"></i>
                     <span class="nav-link-text">Equivalentes</span>
                 </a>
-                <ul class="sidenav-second-level collapse" id="collapseComponents">
-                    <li>
-                        <a href="navbar.html">Adicionar</a>
-                    </li>
-                    <li>
-                        <a href="cards.html">Apagar</a>
-                    </li>
-                </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Chat">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="{{ url('admin/chat') }}">
                     <i class="fa fa-fw fa-comments"></i>
                     <span class="nav-link-text">Chat</span>
                 </a>
@@ -68,42 +71,40 @@
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-sitemap"></i>
+                    <i class="fa fa-fw fa-link"></i>
                     <span class="nav-link-text">Sites Imporatantes</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseMulti">
                     <li>
-                        <a href="#">Second Level Item</a>
+                        <a href="#">Noticias de Nutrição</a>
                     </li>
                     <li>
-                        <a href="#">Second Level Item</a>
+                        <a href="http://www.alimentacaosaudavel.dgs.pt/">Alimentação Saudavel</a>
                     </li>
                     <li>
-                        <a href="#">Second Level Item</a>
-                    </li>
-                    <li>
-                        <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+                        <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Institucionais</a>
                         <ul class="sidenav-third-level collapse" id="collapseMulti2">
                             <li>
-                                <a href="#">Third Level Item</a>
+                                <a href="http://www.ordemdosnutricionistas.pt/">Ordem dos nutricionistas</a>
                             </li>
                             <li>
-                                <a href="#">Third Level Item</a>
+                                <a href="www.apn.org.pt">Associação Portuguesa de Nutricão</a>
                             </li>
                             <li>
-                                <a href="#">Third Level Item</a>
+                                <a href="https://dre.pt/web/guest/pesquisa/-/search/70179155/details/normal?l=1">Legislação em Vigor</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-                <a class="nav-link" href="#">
-                    <i class="fa fa-fw fa-link"></i>
-                    <span class="nav-link-text">Saber Mais</span>
+                <a class="nav-link" href="/app">
+                    <i class="fa fa-fw fa-mobile"></i>
+                    <span class="nav-link-text">Aplicação movel</span>
                 </a>
             </li>
         </ul>
+
         <ul class="navbar-nav sidenav-toggler">
             <li class="nav-item">
                 <a class="nav-link text-center" id="sidenavToggler">
@@ -112,11 +113,13 @@
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-fw fa-envelope"></i>
                     <span class="d-lg-none">Mensagens
-              <span class="badge badge-pill badge-primary">12 Novas</span>
+              <!--<span class="badge badge-pill badge-primary"> 12 novas </span> -->
             </span>
                     <span class="indicator text-primary d-none d-lg-block">
               <i class="fa fa-fw fa-circle"></i>
@@ -124,79 +127,32 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="messagesDropdown">
                     <h6 class="dropdown-header">Novas Mensagens:</h6>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                        <strong>David Francisco</strong>
-                        <span class="small float-right text-muted">11:21 AM</span>
-                        <div class="dropdown-message small">Estou a cumprir o plano a risca Diana e hoje ja não fique com fome!</div>
+
+
+                    @foreach($users3->viewUsers() as $u)
+                        <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{{ url('admin/chat/'.$u->id) }}">
+                        <strong>{{$u->name}}</strong>
+                        <span class="small float-right text-muted">
+                            {{ Carbon\Carbon::parse($users3->messageUsers()->where('user_id', $u->id)->first()->updated_at)->diffForHumans() }}
+                        </span>
+                        <div class="dropdown-message small">{{ $users3->messageUsers()->where('user_id', $u->id)->first()->message}}</div>
                     </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                        <strong>Joao Silva</strong>
-                        <span class="small float-right text-muted">11:21 AM</span>
-                        <div class="dropdown-message small">Preciso de marcar uma nova consulta consigo, o que acha ? </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                        <strong>Camila Abreu</strong>
-                        <span class="small float-right text-muted">11:21 AM</span>
-                        <div class="dropdown-message small">Consegui perder 3Kg estes 15 dias :D</div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item small" href="#">Ver todas as mensages</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-fw fa-bell"></i>
-                    <span class="d-lg-none">Alerts
-              <span class="badge badge-pill badge-warning">6 New</span>
-            </span>
-                    <span class="indicator text-warning d-none d-lg-block">
-              <i class="fa fa-fw fa-circle"></i>
-            </span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="alertsDropdown">
-                    <h6 class="dropdown-header">New Alerts:</h6>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-              <span class="text-success">
-                <strong>
-                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
-              </span>
-                        <span class="small float-right text-muted">11:21 AM</span>
-                        <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-              <span class="text-danger">
-                <strong>
-                  <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
-              </span>
-                        <span class="small float-right text-muted">11:21 AM</span>
-                        <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-              <span class="text-success">
-                <strong>
-                  <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
-              </span>
-                        <span class="small float-right text-muted">11:21 AM</span>
-                        <div class="dropdown-message small">This is an automated server response message. All systems are online.</div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item small" href="#">View all alerts</a>
+
+                    @endforeach
+
+                    <a class="dropdown-item small" href="{{ url('admin/chat') }}">Ver todas as mensages</a>
                 </div>
             </li>
 
+
             <!-- Criar um procurar ??? -->
             <li class="nav-item">
-                <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                <form class="form-inline my-2 my-lg-0 mr-lg-2" id="search_text" method="get" action="http://www.google.com/search">
                     <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Procurar por...">
+                        <input class="form-control" name="q" type="text" placeholder="Procurar...">
                         <span class="input-group-btn">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-primary" type="submit">
                   <i class="fa fa-search"></i>
                 </button>
               </span>
@@ -213,11 +169,12 @@
             </li>
         </ul>
     </div>
-</nav>   
+</nav>
 
+            <!-- Call javascript to yeld -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 @yield('content')
-
 
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
@@ -250,20 +207,28 @@
             </div>
         </div>
     </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="{{ asset('jquery/jquery.min.js')}}"></script>
-    <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="{{ asset('jquery-easing/jquery.easing.min.js')}}"></script>
-    <!-- Page level plugin JavaScript-->
-    <script src="{{ asset('chart.js/Chart.min.js')}}"></script>
+
+
+<!-- O meu javascript -->
+<script src="{{ asset('js/modal/flash.js')}}"></script>
+<!-- Bootstrap core JavaScript-->
+<script src="{{ asset('jquery/jquery.min.js')}}"></script>
+<script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- Core plugin JavaScript-->
+<script src="{{ asset('jquery-easing/jquery.easing.min.js')}}"></script>
+
+                        <!-- Js para graficos -->
+<!-- <script src="{{ asset('chart.js/Chart.min.js')}}"></script> -->
+<!-- <script src="{{ asset('js/sb-admin-charts.min.js')}}"></script> -->
+
+<!-- Page level plugin JavaScript-->
     <script src="{{ asset('datatables/jquery.dataTables.js')}}"></script>
     <script src="{{ asset('datatables/dataTables.bootstrap4.js')}}"></script>
     <!-- Custom scripts for all pages-->
-    <script src="{{ asset('js/sb-admin.min.js')}}"></script>
+    <script src="{{ asset('js/sb-admin.js')}}"></script>
     <!-- Custom scripts for this page-->
     <script src="{{ asset('js/sb-admin-datatables.min.js')}}"></script>
-    <script src="{{ asset('js/sb-admin-charts.min.js')}}"></script>
+
 </div>
 </body>
 

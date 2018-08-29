@@ -21,13 +21,15 @@ Route::get('/app', function() {
 });
 
 
-Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
+Route::get('/password/reset/{token}/{email}', 'Auth\ResetPasswordController@showResetForm');
 Route::post('/password/reset', 'Auth\ResetPasswordController@reset')->name('user.password.reset');
 
 Route::group(['prefix' => 'admin'], function () {
   Route::get('/login', 'AdminAuth\LoginController@showLoginForm')->name('login');
   Route::post('/login', 'AdminAuth\LoginController@login');
   Route::get('/logout', 'AdminAuth\LoginController@logout')->name('logout');
+
+
 
   Route::get('/register', 'AdminAuth\RegisterController@showRegistrationForm')->name('register');
   Route::post('/register', 'AdminAuth\RegisterController@register');

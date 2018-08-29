@@ -1,19 +1,41 @@
 (function($) {
+
+    var collapsed = document.cookie.split(";");
+
+    if(collapsed[0] == "true"){
+        $("body").toggleClass("sidenav-toggled");
+        $(".navbar-sidenav .nav-link-collapse").addClass("collapsed");
+        $(".navbar-sidenav .sidenav-second-level, .navbar-sidenav .sidenav-third-level").removeClass("show");
+    }
   "use strict"; // Start of use strict
   // Configure tooltips for collapsed side navigation
   $('.navbar-sidenav [data-toggle="tooltip"]').tooltip({
     template: '<div class="tooltip navbar-sidenav-tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
   })
+
   // Toggle the side navigation
   $("#sidenavToggler").click(function(e) {
+      if(collapsed[0] == "true"){
+          document.cookie = ("collapsed", false);
+      }
+      else {
+          document.cookie = ("collapsed", true);
+      }
+
+
+
     e.preventDefault();
     $("body").toggleClass("sidenav-toggled");
     $(".navbar-sidenav .nav-link-collapse").addClass("collapsed");
     $(".navbar-sidenav .sidenav-second-level, .navbar-sidenav .sidenav-third-level").removeClass("show");
+
   });
   // Force the toggled class to be removed when a collapsible nav link is clicked
   $(".navbar-sidenav .nav-link-collapse").click(function(e) {
+
+      document.cookie = ("collapsed", false);
     e.preventDefault();
+
     $("body").removeClass("sidenav-toggled");
   });
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
@@ -42,4 +64,9 @@
     }, 1000, 'easeInOutExpo');
     event.preventDefault();
   });
+  // Mensagens flash
+
+
+
 })(jQuery); // End of use strict
+

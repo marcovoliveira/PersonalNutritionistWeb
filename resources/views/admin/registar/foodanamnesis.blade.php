@@ -1,5 +1,5 @@
 @extends('admin.layout.admin')
-
+@php Carbon\Carbon::setLocale('pt') @endphp
 @section('content')
 @php
     $user = Session::get('key');

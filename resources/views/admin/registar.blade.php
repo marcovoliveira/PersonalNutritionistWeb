@@ -20,7 +20,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
-      		            <form class="form-group" role="form" method="POST" action="/admin/registar">
+      		            <form class="form-group" role="form" method="POST" action="{{  url('/admin/registar') }}">
                          {{ csrf_field() }}
 
                         <!-- Nome -->
@@ -49,7 +49,7 @@
                             </div>
                           <!-- Data nascimento -->
                           <div class="form-group{{ $errors->has('data') ? ' has-error' : '' }}">
-                          <label class="" for="date">Data</label>
+                          <label class="" for="date">Data de nascimento</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-3">
                             <input type="date" class="form-control" name="data"  value="{{ old('data') }}"  placeholder="Date" required>
                           </div>
@@ -132,6 +132,8 @@
                         </form>
                         </div>
                       </div>
+
+
                     </div>
                 </div>
           </div>

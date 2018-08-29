@@ -13,6 +13,13 @@ use App\Http\Controllers\Controller;
 
 class FoodAnamnesisController extends Controller
 {
+
+    public function __construct()
+    {
+
+        $this->middleware('admin');
+
+    }
     /**
      * Display a listing of the resource.
      *
@@ -81,6 +88,39 @@ class FoodAnamnesisController extends Controller
 
     }
 
+    public function createAnamnese(Request $request, $id)
+    {
+
+        $anamnese = FoodAnamnesis::create([
+            'user_id' => $id,
+            'breakfast_hour' => $request['pequenoalmocohora'],
+            'breakfast' => $request['pequenoalmoco'],
+            'morning_snack_hour' => $request['meiodamanhahora'],
+            'morning_snack' => $request['meiodamanha'],
+            'lunch_hour' => $request['almocohora'],
+            'lunch' => $request['almoco'],
+            'snack_one_hour' => $request['lancheumhora'],
+            'snack_one' => $request['lancheum'],
+            'snack_two_hour' => $request['lanchedoishora'],
+            'snack_two' => $request['lanchedois'],
+            'diner_hour' => $request['jantarhora'],
+            'diner' => $request['jantar'],
+            'bedtime_snack_hour' => $request['ceiahora'],
+            'bedtime_snack' => $request['ceia'],
+            'snacks' => $request['petiscos'],
+        ]);
+
+        if ($request->ajax()){
+
+            return response()->json($anamnese, 200);
+        }
+
+        session()->flash('message', ' Anamnese alimentar do utente criada com sucesso!');
+        session()->flash('type', 'sucesso');
+        return redirect('admin/utente/'.$id);
+    }
+
+
     /**
      * Display the specified resource.
      *
@@ -112,7 +152,14 @@ class FoodAnamnesisController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $anamnese = FoodAnamnesis::findOrFail($id);
+
+        $anamnese->update($request->all());
+
+        session()->flash('message', 'Anamnese do utente editada com sucesso!');
+        session()->flash('type', 'sucesso');
+        return redirect('admin/utente/'.$anamnese->user_id);
     }
 
     /**

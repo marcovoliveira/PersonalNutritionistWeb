@@ -15,7 +15,7 @@ class CreateFoodPlanTable extends Migration
     {
         Schema::create('food_plan', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
+            $table->text('name');
             $table->text('breakfast')->nullable();
             $table->text('morning_snack')->nullable();
             $table->text('morning_snack_one')->nullable();

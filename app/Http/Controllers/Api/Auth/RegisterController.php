@@ -18,6 +18,7 @@ class RegisterController extends Controller
 
     public function __construct(){
         $this->client = Client::find(2);
+
     }
 
     public function register (Request $request){
@@ -31,7 +32,7 @@ class RegisterController extends Controller
         $user = User::create([
             'name' => request('name'),
             'email' => request('email'),
-            'password' => bcrypt(request('password')) // instead of bcrypt('password')
+            'password' => bcrypt(request('password'))
         ]);
 
         return $this->issueToken($request, 'password');

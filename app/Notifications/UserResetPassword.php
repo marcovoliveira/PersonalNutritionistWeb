@@ -46,7 +46,7 @@ class UserResetPassword extends Notification
         return (new MailMessage)
             ->subject('Personal Nutritionist: Criar uma nova password.')
             ->line('iniciou o processo de criação de uma nova password para acesso a aplicação movel')
-            ->action('Criar Password', url('password/reset', $this->token))
+            ->action('Criar Password', url('password/reset/'.$this->token.'/'.$notifiable->email))
             ->line('Apos concluir o processo podera iniciar sessão na aplicação movel com a nova password definida.');
     }
 }

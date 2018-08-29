@@ -138,7 +138,7 @@
                          <!-- Consumo de bebidas alcolicas -->
 
                         <div class="form-group">
-                        <label class="" for="genero">Consumo de bebidas alcolicas</label>
+                        <label class="" for="genero">Frequencia do consumo de bebidas alcolicas</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-3">
                           <select class="custom-select mb-2 mr-sm-2 mb-sm-3" name="bebidasalcolicas">
                               <option value="Raramente" selected>Raramente</option>

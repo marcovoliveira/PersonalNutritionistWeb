@@ -13,11 +13,19 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('register', 'Api\Auth\RegisterController@register');
+//Route::post('register', 'Api\Auth\RegisterController@register');
+// Registo por API desativado!
 Route::post('login', 'Api\Auth\LoginController@login');
 Route::post('refresh', 'Api\Auth\LoginController@refresh');
 
 Route::middleware('auth:api')->group(function () {
     Route::post('logout', 'Api\Auth\LoginController@logout');
+
+    Route::get('plano', 'Api\FoodPlanApiController@index');
+
+    Route::get('messages', 'Api\ChatApiController@index');
+
+    Route::post('newMessage', 'Api\ChatApiController@post');
+
 });
 

@@ -29,7 +29,7 @@ class ResetPasswordController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/app'; // Ira redirecionar para uma pagina de download da aplicação 
+    protected $redirectTo = '/app'; // Ira redirecionar para uma pagina de download da aplicação
 
     /**
      * Create a new controller instance.

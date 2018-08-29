@@ -11415,7 +11415,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "Mostrar _START_ a _END_ de _TOTAL_ Utentes",
+			"sInfo": "Mostrar _START_ a _END_ de _TOTAL_",
 	
 	
 			/**
@@ -11458,7 +11458,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfoFiltered": "(A Filtrar de _MAX_ Utentes)",
+			"sInfoFiltered": "(A Filtrar de _MAX_ )",
 	
 	
 			/**
@@ -11576,7 +11576,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Mostrar _MENU_ Utentes",
+			"sLengthMenu": "Mostrar _MENU_",
 	
 	
 			/**

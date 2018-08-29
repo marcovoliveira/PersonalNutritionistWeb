@@ -993,6 +993,8 @@ var app = new Vue({
   el: '#app'
 });
 
+$('#flash').delay(500).fadeIn(250).delay(5000).fadeOut(500);
+
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {

@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel Multi Auth Guard') }}</title>
+    <title>{{ config('app.name', 'Personal Nutritionist') }}</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -34,8 +34,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/admin') }}">
-                    {{ config('app.name', 'Laravel Multi Auth Guard') }}: Administração
+                <a class="navbar-brand" href="{{ url('/admin/home') }}">
+                    {{ config('app.name', 'Personal Nutritionist') }}: Administração
                 </a>
             </div>
 
@@ -48,9 +48,10 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
+
                     @if (Auth::guest())
-                        <li><a href="{{ url('/admin/login') }}">Entrar</a></li>
-                        <li><a href="{{ url('/admin/register') }}">Registar</a></li>
+                        <!--<li><a href="{{ url('/admin/login') }}">Entrar</a></li>
+                        <li><a href="{{ url('/admin/register') }}">Registar</a></li>-->
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
