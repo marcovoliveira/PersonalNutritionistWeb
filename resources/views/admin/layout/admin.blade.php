@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Personal Nutritionist - Diana Ferreira</title>
+    <title>Personal Nutritionist - Beatriz Baptista</title>
     <!-- Bootstrap core CSS-->
     <link href="{{ asset('bootstrap/css/bootstrap.min.css')}}" rel  ="stylesheet">
     <!-- Custom fonts for this template-->
@@ -26,7 +26,7 @@
 
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="{{ url('admin/home') }}">Personal Nutritionist - Diana Ferreira</a>
+    <a class="navbar-brand" href="{{ url('admin/home') }}">Personal Nutritionist - Beatriz Baptista</a>
 
     <div align="center">
 

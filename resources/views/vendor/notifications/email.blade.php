@@ -45,7 +45,7 @@
 @if (! empty($salutation))
 {{ $salutation }}
 @else
-Atentamente,<br>Diana Ferreira                      {{-- {{ config('app.name') --}}
+Atentamente,<br>Beatriz Baptista                      {{-- {{ config('app.name') --}}
 @endif
 
 {{-- Subcopy --}}

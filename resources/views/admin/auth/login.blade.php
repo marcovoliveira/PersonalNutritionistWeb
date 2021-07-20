@@ -3,7 +3,8 @@
 @section('content')
     <div class="container">
         <div class=".col-sm-4 col-md-offset-5">
-                <img src="{{URL::asset('/images/logotipo.png')}}" align="middle" height="200" width="230">
+               <h1>Beatriz Baptista</h1>
+               <h3> Nutricionista</h3>
         </div>
     </div>
     <br>

@@ -68,13 +68,13 @@ class RegisterController extends Controller
 
         $request->session()->flash('key', $user);
 
-        $response = $this->broker()->sendResetLink(
+        /*$response = $this->broker()->sendResetLink(
             $request->only('email')
         );
 
         $response == Password::RESET_LINK_SENT
             ? $this->sendResetLinkResponse($response)
-            : $this->sendResetLinkFailedResponse($request, $response);
+            : $this->sendResetLinkFailedResponse($request, $response);*/
 
         return redirect('/admin/registar/personalinformation');
         
