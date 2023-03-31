@@ -28,8 +28,8 @@ Route::get('registar/foodanamnesis', 'User\FoodAnamnesisController@create');
 Route::post('registar/foodanamnesis', 'User\FoodAnamnesisController@store');
 
 //Registar Avaliação Antropometrica 
-Route::get('registar/anthropometricevaluation', 'User\AnthropometricevaluationController@create');
-Route::post('registar/anthropometricevaluation/{id}', 'User\AnthropometricevaluationController@store');
+Route::get('registar/anthropometricevaluation', 'User\AnthropometricEvaluationController@create');
+Route::post('registar/anthropometricevaluation/{id}', 'User\AnthropometricEvaluationController@store');
 
 // Associar plano alimentar
 Route::get('registar/foodplaning', 'User\FoodPlanController@create');
@@ -75,7 +75,7 @@ Route::post('utente/create/anamnese/{id}', 'User\FoodAnamnesisController@createA
 
 
 //Nova consulta
-    Route::get('utente/criar/consulta/{id}', 'User\AnthropometricevaluationController@createNew');
+    Route::get('utente/criar/consulta/{id}', 'User\AnthropometricEvaluationController@createNew');
 
 
 // Ajax request

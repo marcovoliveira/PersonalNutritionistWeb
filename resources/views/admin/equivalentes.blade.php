@@ -67,8 +67,8 @@
         </div>
         </div>
 
-    <script src="{{ asset('js/modal/equivalentes.js')}}"></script>
-    <script src="{{ asset('js/modal/sweetalert.js')}}"></script>
+    <script src="{{ asset('public/js/modal/equivalentes.js')}}"></script>
+    <script src="{{ asset('public/js/modal/sweetalert.js')}}"></script>
 
 
 @endsection

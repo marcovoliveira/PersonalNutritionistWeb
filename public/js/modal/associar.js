@@ -80,8 +80,8 @@ $('.form-group.edit').on('submit', function(e) {
             $('#plano').val(plan.id).find('option:selected').text(plan.name);
             $('#myEditModal').modal('hide');
         },
-        error: function () {
-            alert("Falha ao editar o plano")
+        error: function (ex) {
+            alert("Falha ao editar o plano: " + ex)
         }
     });
 });
@@ -112,8 +112,8 @@ $('.form-group.create').on('submit', function(e) {
 
 
         },
-        error: function () {
-            alert("Falha ao editar o plano")
+        error: function (ex) {
+            alert("Falha ao criar o plano: " + ex)
         }
     });
 });

@@ -161,5 +161,5 @@
 </div>
 </div>
 
-<script src="{{ asset('js/modal/associar.js')}}"></script>
+<script src="{{ asset('public/js/modal/associar.js')}}"></script>
     @endsection

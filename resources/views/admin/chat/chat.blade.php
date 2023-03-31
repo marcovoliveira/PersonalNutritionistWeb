@@ -137,6 +137,6 @@
     </div>
         </div>
     </div>
-    <script src="{{ asset('js/modal/chat.js')}}"></script>
+    <script src="{{ asset('public/js/modal/chat.js')}}"></script>
 @endsection
 

@@ -235,7 +235,7 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/modal/anamnese.js')}}"></script>
+    <script src="{{ asset('public/js/modal/anamnese.js')}}"></script>
 @endsection
 
 

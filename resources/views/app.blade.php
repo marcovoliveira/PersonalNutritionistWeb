@@ -9,14 +9,14 @@
     <meta name="author" content="">
 
     <title>PersonalNutritionist - Aplicação Movel</title>
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Bootstrap core CSS -->
 
 
     <!-- Custom fonts for this template -->
-     <link href="{{ asset('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+     <link href="{{ asset('public/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
-    <link href="{{ asset('simple-line-icons/css/simple-line-icons.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('public/simple-line-icons/css/simple-line-icons.css')}}" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
@@ -24,10 +24,10 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- Plugin CSS -->
-     <link href="{{ asset('device-mockups/device-mockups.min.css')}}" rel="stylesheet" type="text/css">
+     <link href="{{ asset('public/device-mockups/device-mockups.min.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-     <link href="{{ asset('css/new-age.min.css')}}" rel="stylesheet" type="text/css">
+     <link href="{{ asset('public/css/new-age.min.css')}}" rel="stylesheet" type="text/css">
 
   </head>
 
@@ -174,12 +174,12 @@
       </div>
     </footer>
    <!-- Bootstrap core JavaScript-->
-    <script src="{{ asset('jquery/jquery.min.js')}}"></script>
-    <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ asset('public/jquery/jquery.min.js')}}"></script>
+    <script src="{{ asset('public/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <!-- Core plugin JavaScript-->
-    <script src="{{ asset('jquery-easing/jquery.easing.min.js')}}"></script>
+    <script src="{{ asset('public/jquery-easing/jquery.easing.min.js')}}"></script>
     <!-- Custom scripts for this template -->
-    <script src="{{ asset('js/new-age.min.js')}}"></script>
+    <script src="{{ asset('public/js/new-age.min.js')}}"></script>
   </body>
 
 </html>

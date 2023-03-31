@@ -19,3 +19,19 @@
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
+
+
+#disable directory browsing
+Options -Indexes
+
+#PROTECT ENV FILE
+<Files .env>
+order allow,deny
+Deny from all
+</Files>
+
+#PROTECT ENV FILE
+<Files .htaccess>
+order allow,deny
+Deny from all
+</Files>

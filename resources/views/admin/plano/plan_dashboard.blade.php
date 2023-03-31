@@ -107,5 +107,5 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/modal/planos.js')}}"></script>
+    <script src="{{ asset('public/js/modal/planos.js')}}"></script>
 @endsection

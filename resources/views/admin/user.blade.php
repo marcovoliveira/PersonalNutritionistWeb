@@ -338,7 +338,7 @@
 
                         <div class="col-md-4 morning_snack">
                             <h5 class="morning_snack">
-                                Lancha da manha
+                                Lanche da manha
                             </h5>
                             @if($user->FoodAnamnesis->last()->morning_snack_hour)
                             {{ Carbon\Carbon::parse($user->FoodAnamnesis->last()->morning_snack_hour)->format('H:i')}}
@@ -541,6 +541,6 @@
 
 
 
-<script src="{{ asset('js/modal/user.js')}}"></script>
+<script src="{{ asset('public/js/modal/user.js')}}"></script>
 @endsection
 

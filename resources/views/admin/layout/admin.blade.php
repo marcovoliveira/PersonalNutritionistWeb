@@ -12,13 +12,13 @@
     <meta name="author" content="">
     <title>Personal Nutritionist - Beatriz Baptista</title>
     <!-- Bootstrap core CSS-->
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css')}}" rel  ="stylesheet">
+    <link href="{{ asset('public/bootstrap/css/bootstrap.min.css')}}" rel  ="stylesheet">
     <!-- Custom fonts for this template-->
-    <link href="{{ asset('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('public/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <!-- Page level plugin CSS-->
-    <link href="{{ asset('datatables/dataTables.bootstrap4.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/datatables/dataTables.bootstrap4.css')}}" rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="{{ asset('css/sb-admin.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/css/sb-admin.css')}}" rel="stylesheet">
 
 </head>
 
@@ -210,24 +210,24 @@
 
 
 <!-- O meu javascript -->
-<script src="{{ asset('js/modal/flash.js')}}"></script>
+<script src="{{ asset('public/js/modal/flash.js')}}"></script>
 <!-- Bootstrap core JavaScript-->
-<script src="{{ asset('jquery/jquery.min.js')}}"></script>
-<script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{ asset('public/jquery/jquery.min.js')}}"></script>
+<script src="{{ asset('public/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- Core plugin JavaScript-->
-<script src="{{ asset('jquery-easing/jquery.easing.min.js')}}"></script>
+<script src="{{ asset('public/jquery-easing/jquery.easing.min.js')}}"></script>
 
                         <!-- Js para graficos -->
-<!-- <script src="{{ asset('chart.js/Chart.min.js')}}"></script> -->
-<!-- <script src="{{ asset('js/sb-admin-charts.min.js')}}"></script> -->
+<!-- <script src="{{ asset('public/chart.js/Chart.min.js')}}"></script> -->
+<!-- <script src="{{ asset('public/js/sb-admin-charts.min.js')}}"></script> -->
 
 <!-- Page level plugin JavaScript-->
-    <script src="{{ asset('datatables/jquery.dataTables.js')}}"></script>
-    <script src="{{ asset('datatables/dataTables.bootstrap4.js')}}"></script>
+    <script src="{{ asset('public/datatables/jquery.dataTables.js')}}"></script>
+    <script src="{{ asset('public/datatables/dataTables.bootstrap4.js')}}"></script>
     <!-- Custom scripts for all pages-->
-    <script src="{{ asset('js/sb-admin.js')}}"></script>
+    <script src="{{ asset('public/js/sb-admin.js')}}"></script>
     <!-- Custom scripts for this page-->
-    <script src="{{ asset('js/sb-admin-datatables.min.js')}}"></script>
+    <script src="{{ asset('public/js/sb-admin-datatables.min.js')}}"></script>
 
 </div>
 </body>
