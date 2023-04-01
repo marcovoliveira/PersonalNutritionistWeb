@@ -14,7 +14,7 @@
                 </h5>
             </div>
             <div class="modal-body breakfast">
-                <div class="modal-breakfast">
+                <div style="white-space: pre-line" class="modal-breakfast">
                     Pequeno Almoço
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 </h5>
             </div>
             <div class="modal-body morning_snack">
-                <div class="modal-morning_snack">
+                <div style="white-space: pre-line" class="modal-morning_snack">
                     Lanche da manha
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 </h5>
             </div>
             <div class="modal-body morning_snack_one">
-                <div class="modal-morning_snack_one">
+                <div style="white-space: pre-line" class="modal-morning_snack_one">
                     Lanche da manha 2
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 </h5>
             </div>
             <div class="modal-body lunch">
-                <div class="modal-lunch">
+                <div style="white-space: pre-line" class="modal-lunch">
                     Almoço
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 </h5>
             </div>
             <div class="modal-body snack_one">
-                <div class="modal-snack_one">
+                <div style="white-space: pre-line" class="modal-snack_one">
                     Lanche
                 </div>
             </div>
@@ -68,7 +68,7 @@
                 </h5>
             </div>
             <div class="modal-body snack_two">
-                <div class="modal-snack_two">
+                <div style="white-space: pre-line" class="modal-snack_two">
                     Lanche 2
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 </h5>
             </div>
             <div class="modal-body diner">
-                <div class="modal-diner">
+                <div style="white-space: pre-line" class="modal-diner">
                     Jantar
                 </div>
             </div>
@@ -90,7 +90,7 @@
                 </h5>
             </div>
             <div class="modal-body bedtime_snack">
-                <div class="modal-bedtime_snack">
+                <div style="white-space: pre-line" class="modal-bedtime_snack">
                     Ceia
                 </div>
             </div>
@@ -101,7 +101,7 @@
                 </h5>
             </div>
             <div class="modal-body recomendations">
-                <div class="modal-recomendations">
+                <div style="white-space: pre-line" class="modal-recomendations">
                     Recomendações
                 </div>
             </div>

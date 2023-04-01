@@ -16,7 +16,7 @@
     </h5>
 </div>
 <div class="modal-body breakfast">
-    <div class="modal-breakfast">
+    <div style="white-space: pre-line" class="modal-breakfast">
         {{$plano->breakfast}}
     </div>
 </div>
@@ -26,11 +26,11 @@
 
 <div class="col-md-4 morning_snack">
     <h5 class="morning_snack">
-        Lancha da manha
+        Lanche da manha
     </h5>
 </div>
 <div class="modal-body morning_snack">
-    <div class="modal-morning_snack">
+    <div style="white-space: pre-line" class="modal-morning_snack">
         {{$plano->morning_snack}}
     </div>
 </div>
@@ -44,7 +44,7 @@
     </h5>
 </div>
 <div class="modal-body morning_snack_one">
-    <div class="modal-morning_snack_one">
+    <div style="white-space: pre-line" class="modal-morning_snack_one">
         {{$plano->morning_snack_one}}
     </div>
 </div>
@@ -58,7 +58,7 @@
     </h5>
 </div>
 <div class="modal-body lunch">
-    <div class="modal-lunch">
+    <div style="white-space: pre-line" class="modal-lunch">
         {{$plano->lunch}}
     </div>
 </div>
@@ -68,11 +68,11 @@
 
 <div class="col-md-4 snack_one">
     <h5 class="snack_one">
-        Lanche
+        Lanche da tarde
     </h5>
 </div>
 <div class="modal-body snack_one">
-    <div class="modal-snack_one">
+    <div style="white-space: pre-line" class="modal-snack_one">
         {{$plano->snack_one}}
     </div>
 </div>
@@ -86,7 +86,7 @@
     </h5>
 </div>
 <div class="modal-body snack_two">
-    <div class="modal-snack_two">
+    <div style="white-space: pre-line" class="modal-snack_two">
         {{$plano->snack_two}}
     </div>
 </div>
@@ -101,7 +101,7 @@
     </h5>
 </div>
 <div class="modal-body diner">
-    <div class="modal-diner">
+    <div style="white-space: pre-line" class="modal-diner">
         {{$plano->diner}}
     </div>
 </div>
@@ -116,7 +116,7 @@
     </h5>
 </div>
 <div class="modal-body bedtime_snack">
-    <div class="modal-bedtime_snack">
+    <div style="white-space: pre-line" class="modal-bedtime_snack">
         {{$plano->bedtime_snack}}
     </div>
 </div>
@@ -132,7 +132,7 @@
     </h5>
 </div>
 <div class="modal-body recomendations">
-    <div class="modal-recomendations">
+    <div style="white-space: pre-line" class="modal-recomendations">
         {{$plano->recomendations}}
     </div>
 </div>
