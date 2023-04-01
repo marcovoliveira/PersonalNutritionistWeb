@@ -21,23 +21,23 @@
 
             <div class="col-md-4 morning_snack">
                 <h5 class="morning_snack">
-                    Lancha da manha
+                    Lancha da manhã
                 </h5>
             </div>
             <div class="modal-body morning_snack">
                 <div style="white-space: pre-line" class="modal-morning_snack">
-                    Lanche da manha
+                    Lanche da manhã
                 </div>
             </div>
 
             <div class="col-md-4 morning_snack_one">
                 <h5 class="morning_snack_one">
-                    Lanche da manha 2
+                    Lanche da manhã 2
                 </h5>
             </div>
             <div class="modal-body morning_snack_one">
                 <div style="white-space: pre-line" class="modal-morning_snack_one">
-                    Lanche da manha 2
+                    Lanche da manhã 2
                 </div>
             </div>
             <div class="col-md-4 lunch">

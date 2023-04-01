@@ -26,7 +26,7 @@
 
 <div class="col-md-4 morning_snack">
     <h5 class="morning_snack">
-        Lanche da manha
+        Lanche da manhã
     </h5>
 </div>
 <div class="modal-body morning_snack">
@@ -40,7 +40,7 @@
 @if ($plano->morning_snack_one)
 <div class="col-md-4 morning_snack_one">
     <h5 class="morning_snack_one">
-        Segundo Lanche da manha
+        Segundo Lanche da manhã
     </h5>
 </div>
 <div class="modal-body morning_snack_one">
